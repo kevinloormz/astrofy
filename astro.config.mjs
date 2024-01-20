@@ -7,7 +7,7 @@ import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'kevinloormz.github.io.git',
+  site: 'https://kevinloormz.github.io.git',
   integrations: [mdx(), sitemap(), tailwind()],
   output: "server",
   adapter: netlify()
