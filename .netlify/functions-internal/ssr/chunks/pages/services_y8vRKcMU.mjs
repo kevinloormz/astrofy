@@ -2,8 +2,8 @@
 import { e as createAstro, f as createComponent, r as renderTemplate, j as renderComponent, m as maybeRenderHead } from '../astro_bJqecnWw.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { a as $$BaseLayout } from './404_7vtPEFXH.mjs';
-import { $ as $$HorizontalCard } from './__7fexyjID.mjs';
+import { a as $$BaseLayout } from './404__uPU-Yc-.mjs';
+import { $ as $$HorizontalCard } from './__OLa069jr.mjs';
 
 const $$Astro = createAstro("https://kevinloormz.github.io.git");
 const $$Services = createComponent(async ($$result, $$props, $$slots) => {

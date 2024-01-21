@@ -1,7 +1,7 @@
 /* empty css                           */
 import { e as createAstro, f as createComponent, r as renderTemplate, m as maybeRenderHead, h as addAttribute, j as renderComponent, A as AstroError, n as UnknownContentCollectionError, o as renderUniqueStylesheet, p as renderScriptElement, q as createHeadAndContent, u as unescapeHTML, F as Fragment } from '../astro_bJqecnWw.mjs';
 import 'kleur/colors';
-import { $ as $$Image, a as $$BaseLayout } from './404_7vtPEFXH.mjs';
+import { $ as $$Image, a as $$BaseLayout } from './404__uPU-Yc-.mjs';
 import { prependForwardSlash } from '@astrojs/internal-helpers/path';
 import 'clsx';
 
@@ -191,7 +191,7 @@ createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"blog":{"type":"content","entries":{"post2":"/src/content/blog/post2.md","post1":"/src/content/blog/post1.md","post3":"/src/content/blog/post3.md"}},"store":{"type":"content","entries":{"item2":"/src/content/store/item2.md","item1":"/src/content/store/item1.md","item3":"/src/content/store/item3.md"}}};
+lookupMap = {"blog":{"type":"content","entries":{"post1":"/src/content/blog/post1.md","post2":"/src/content/blog/post2.md","post3":"/src/content/blog/post3.md"}},"store":{"type":"content","entries":{"item1":"/src/content/store/item1.md","item2":"/src/content/store/item2.md","item3":"/src/content/store/item3.md"}}};
 
 function createGlobLookup(glob) {
 	return async (collection, lookupId) => {
@@ -213,10 +213,6 @@ const getCollection = createGetCollection({
 	dataCollectionToEntryMap,
 	getRenderEntryImport: createGlobLookup(collectionToRenderEntryMap),
 });
-
-function createSlug(title, staticSlug) {
-  return title.trim().toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "").replace(/^-+|-+$/g, "");
-}
 
 const $$Astro$3 = createAstro("https://kevinloormz.github.io.git");
 const $$HorizontalShopItem = createComponent(async ($$result, $$props, $$slots) => {
@@ -264,6 +260,10 @@ const ____page_$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
   getStaticPaths: getStaticPaths$2,
   url: $$url$2
 }, Symbol.toStringTag, { value: 'Module' }));
+
+function createSlug(title, staticSlug) {
+  return title.trim().toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "").replace(/^-+|-+$/g, "");
+}
 
 const $$Astro$1 = createAstro("https://kevinloormz.github.io.git");
 async function getStaticPaths$1({ paginate }) {
