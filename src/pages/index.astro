@@ -12,19 +12,22 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hola 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">Soy Kevin</div>
+    <div class="text-3xl py-3 font-bold">Ingeniero de datos y Analista BI</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        Tengo más de 5 años de experiencia en áreas relacionadas con Tecnología de la 
+        Información (TI), Business Intelligence (BI) y Ciencia de Datos. Me apasiona trabajar 
+        para empresas que tengan una cultura basada en el análisis de datos. Considero que 
+        soy una persona responsable, comprometida y que cumple con las tareas asignadas 
+        en los plazos establecidos. Además, poseo habilidades para adaptarme a los cambios 
+        y aprender de manera rápida.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://www.linkedin.com/in/kevinloor/" target="_blank" > Linkedin ➟</a>
+      <a href="mailto:kevinloormz@gmail.com" target="_blank" class="btn btn-outline ml-5">
+        Correo
       </a>
     </div>
   </div>
@@ -34,10 +37,10 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Spark Fundamentals"
+    img="/ApacheSpark.webp"
+    desc="En mi proyecto de exploración de datos en Deepnote, utilicé Apache Spark para procesar grandes volúmenes de datos de una competencia de los Juegos Olímpicos. Mi objetivo era obtener información sobre los resultados de los juegos, los atletas y los países participantes. Utilizando Spark, pude procesar los datos de manera eficiente y obtener información valiosa en poco tiempo. Este proyecto me permitió mejorar mis habilidades en el procesamiento de grandes volúmenes de datos y en la exploración de datos."
+    url="https://deepnote.com/@kevin-loor/Spark-NUcx6iefRL6IFYeuX15Qgg"
     badge="NEW"
   />
   <div class="divider my-0"></div>
@@ -56,23 +59,4 @@ const last_posts = posts.slice(0, 3);
     badge="FOSS"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
