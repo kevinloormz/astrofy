@@ -84,7 +84,7 @@ const $$Astro$7 = createAstro("https://kevinloormz.github.io.git");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$Header;
-  return renderTemplate`${maybeRenderHead()}<div class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm"> <div class="navbar"> <div class="navbar-start"> <label for="my-drawer" class="btn btn-square btn-ghost"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </label> </div> <div class="navbar-center"> <a class="btn btn-ghost normal-case text-xl" href="/">Manuel Ernesto ⚡️</a> </div> <div class="navbar-end"></div> </div> </div>`;
+  return renderTemplate`${maybeRenderHead()}<div class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm"> <div class="navbar"> <div class="navbar-start"> <label for="my-drawer" class="btn btn-square btn-ghost"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </label> </div> <div class="navbar-center"> <a class="btn btn-ghost normal-case text-xl" href="/">Kevin Loor ⚡️</a> </div> <div class="navbar-end"></div> </div> </div>`;
 }, "C:/Users/kevin/Documents/GitHub/portfolio/src/components/Header.astro", void 0);
 
 const $$Astro$6 = createAstro("https://kevinloormz.github.io.git");
@@ -93,9 +93,9 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Footer;
   const today = /* @__PURE__ */ new Date();
   return renderTemplate`${maybeRenderHead()}<footer class="footer footer-center block mb-5 pt-10"> <div class="pb-2">
-&copy; ${today.getFullYear()} Manuel Ernesto
+&copy; ${today.getFullYear()} M. Ernesto
 </div> <div class="inline opacity-75">
-Developed by <a href="https://manuelernestog.github.io" target="_blank" class="font-bold">Manuel Ernesto</a> using
+Developed by <a href="https://manuelernestog.github.io" target="_blank" class="font-bold">Kevin Loor</a> using
 <!-- Thanks for using this template. You can keep this line to support my work :) --> <a href="https://astrofy-template.netlify.app/" target="_blank" class="font-bold">Astrofy Template ⚡️</a> </div> </footer> `;
 }, "C:/Users/kevin/Documents/GitHub/portfolio/src/components/Footer.astro", void 0);
 
@@ -135,8 +135,8 @@ const $$ViewTransitions = createComponent(async ($$result, $$props, $$slots) => 
   return renderTemplate`<meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback"${addAttribute(fallback, "content")}>`;
 }, "C:/Users/kevin/Documents/GitHub/portfolio/node_modules/.pnpm/astro@4.0.2/node_modules/astro/components/ViewTransitions.astro", void 0);
 
-const SITE_TITLE = "Astrofy | Personal Portfolio Website Template";
-const SITE_DESCRIPTION = "Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.";
+const SITE_TITLE = "Personal Portfolio";
+const SITE_DESCRIPTION = "APersonal Portfolio Website built with Astro and TailwindCSS.";
 
 const $$Astro$1 = createAstro("https://kevinloormz.github.io.git");
 const $$BaseLayout = createComponent(async ($$result, $$props, $$slots) => {

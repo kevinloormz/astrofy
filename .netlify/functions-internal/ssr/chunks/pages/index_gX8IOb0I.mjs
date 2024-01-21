@@ -11,7 +11,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Index;
   const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   const last_posts = posts.slice(0, 3);
-  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "sideBarActiveItemID": "home" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="pb-12 mt-5"> <div class="text-xl py-1">Hey there 👋</div> <div class="text-5xl font-bold">I'm Manuel Ernesto</div> <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div> <div class="py-2"> <text class="text-lg">
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "sideBarActiveItemID": "home" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="pb-12 mt-5"> <div class="text-xl py-1">Hey there 👋</div> <div class="text-5xl font-bold">Soy Kevin</div> <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div> <div class="py-2"> <text class="text-lg">
 This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
         Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
         it useful!
